@@ -1,0 +1,152 @@
+.container {
+  padding: var(--space-md);
+  padding-bottom: 100px;
+}
+
+.header {
+  margin-bottom: var(--space-lg);
+}
+
+.header h2 {
+  font-size: var(--font-size-xl);
+  margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+  color: var(--color-text-light);
+  font-size: var(--font-size-sm);
+}
+
+.progress {
+  display: inline-block;
+  margin-top: var(--space-sm);
+  padding: var(--space-xs) var(--space-md);
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  border-radius: var(--radius);
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.goalList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.goalCard {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow);
+  transition: all 0.2s ease;
+  animation: fadeIn 0.3s ease;
+}
+
+.goalCard.completed {
+  opacity: 0.7;
+  background: #f8f8f6;
+}
+
+.goalHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.checkbox {
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  flex-shrink: 0;
+  padding: 0;
+  transition: all 0.2s ease;
+}
+
+.checkbox.checked {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  animation: checkPop 0.3s ease;
+}
+
+.goalMain {
+  flex: 1;
+  min-width: 0;
+}
+
+.goalNumber {
+  font-size: 11px;
+  color: var(--color-text-light);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.wishInput {
+  border: none;
+  padding: var(--space-xs) 0;
+  font-size: var(--font-size-md);
+  font-weight: 600;
+  background: transparent;
+}
+
+.wishInput:focus {
+  border: none;
+}
+
+.expandBtn {
+  background: none;
+  color: var(--color-text-light);
+  font-size: 12px;
+  padding: var(--space-xs);
+}
+
+.woopDetails {
+  margin-top: var(--space-md);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  animation: fadeIn 0.3s ease;
+}
+
+.woopField label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-light);
+  margin-bottom: var(--space-xs);
+}
+
+.woopField input {
+  font-size: var(--font-size-sm);
+  padding: var(--space-sm) var(--space-md);
+}
+
+.tip {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--color-primary-light);
+  border-radius: var(--radius);
+  font-size: var(--font-size-sm);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes checkPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}

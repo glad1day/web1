@@ -1,0 +1,163 @@
+.container {
+  padding: var(--space-md);
+  padding-bottom: 100px;
+}
+
+.greetingCard {
+  background: linear-gradient(135deg, #FF8C42, #FFB88C);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  color: white;
+  margin-bottom: var(--space-lg);
+}
+
+.greetingTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.greetingEmoji {
+  font-size: 32px;
+}
+
+.date {
+  font-size: var(--font-size-sm);
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.greetingText {
+  font-size: var(--font-size-xxl);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.streak {
+  margin-top: var(--space-sm);
+  padding: var(--space-xs) var(--space-md);
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: var(--radius);
+  display: inline-block;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+}
+
+.energySection {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--space-md);
+  text-align: center;
+}
+
+.energySection h3 {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-md);
+}
+
+.energyMeter {
+  display: flex;
+  justify-content: center;
+}
+
+.energySvg {
+  width: 140px;
+  height: 140px;
+}
+
+.weeklySection {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow);
+  margin-bottom: var(--space-md);
+}
+
+.weeklySection h3 {
+  font-size: var(--font-size-md);
+  margin-bottom: var(--space-md);
+}
+
+.weeklyChart {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 100px;
+  gap: var(--space-xs);
+}
+
+.barWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.barContainer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.bar {
+  width: 70%;
+  min-height: 3px;
+  border-radius: 4px 4px 0 0;
+  transition: height 0.4s ease;
+}
+
+.barLabel {
+  font-size: 11px;
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+.barToday {
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.summaryCard {
+  background: var(--color-surface);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.summaryCard:active {
+  transform: scale(0.97);
+}
+
+.summaryEmoji {
+  font-size: 28px;
+}
+
+.summaryLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+.summaryValue {
+  font-size: var(--font-size-lg);
+  font-weight: 800;
+  color: var(--color-text);
+}
